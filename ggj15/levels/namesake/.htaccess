@@ -1,0 +1,11 @@
+ErrorDocument 401 "Unauthorized"
+AuthUserFile /var/www/.htpasswd 
+DirectoryIndex namesake.html
+AuthType Basic
+AuthName "Caution can't be counted"
+require user e 
+<Files ~ "\.(jpq|jpeg|png|gif)$">
+   order deny,allow
+      allow from all
+satisfy any
+</Files>

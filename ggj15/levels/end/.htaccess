@@ -1,0 +1,11 @@
+ErrorDocument 401 "Unauthorized"
+AuthUserFile /var/www/.htpasswd 
+DirectoryIndex index.html
+AuthType Basic
+AuthName "No password required"
+require user wasitacatisaw 
+<Files ~ "\.(jpq|jpeg|png|gif)$">
+   order deny,allow
+      allow from all
+satisfy any
+</Files>

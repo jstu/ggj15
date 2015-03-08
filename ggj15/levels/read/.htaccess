@@ -1,0 +1,11 @@
+ErrorDocument 401 "Unauthorized"
+AuthUserFile /var/www/.htpasswd 
+DirectoryIndex it.html
+AuthType Basic
+AuthName "Jack is Rude, Pitiful & Gross"
+require user jrpg 
+<Files ~ "\.(jpq|jpeg|png|gif)$">
+   order deny,allow
+      allow from all
+satisfy any
+</Files>

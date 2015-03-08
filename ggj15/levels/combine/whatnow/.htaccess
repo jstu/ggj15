@@ -1,0 +1,11 @@
+ErrorDocument 401 "Unauthorized"
+AuthUserFile /var/www/.htpasswd 
+DirectoryIndex choose.html
+AuthType Basic
+AuthName "Thinking in colors."
+require user purple 
+<Files ~ "\.(jpq|jpeg|png|gif)$">
+   order deny,allow
+      allow from all
+satisfy any
+</Files>

@@ -1,0 +1,11 @@
+ErrorDocument 401 "Unauthorized"
+AuthUserFile /var/www/.htpasswd 
+DirectoryIndex index.html
+AuthType Basic
+AuthName "Modern art in numbers"
+require user grenade hadron
+<Files ~ "\.(jpq|jpeg|png|gif)$">
+   order deny,allow
+      allow from all
+satisfy any
+</Files>

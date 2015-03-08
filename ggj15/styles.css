@@ -1,0 +1,163 @@
+﻿/*Menubaari*/
+
+
+#menu {
+    width: 800px;
+    height: 35px;
+    color: gray;
+    font-size: 16px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: beige;
+
+}
+
+#menu ul {
+    height: auto;
+    padding: 8px 0px;
+    margin: 0px;
+}
+
+#menu li {
+    display: inline;
+    padding: 20px;
+}
+
+#menu a:hover {
+    color: #F90;
+    background-color: #FFF;
+}
+
+
+#menu a {
+    text-decoration: none;
+    color: gray;
+    padding: 8px 8px 8px 8px;
+}
+
+#textblock {
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+
+h1.basicHeadline { 
+     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+     font-size: 33px; 
+     font-style: normal; 
+     font-variant: normal; 
+     font-weight: 500; 
+     line-height: 26.4px; 
+     font-weight: bold;
+     display:inline;
+
+}
+
+/*h1.bigLetter { 
+     font-family: 'Times New Roman', Helvetica, sans-serif; 
+     font-size: 30px; 
+     font-style: normal; 
+     font-variant: normal; 
+     font-weight: 500; 
+     line-height: 26.4px; 
+     display:inline;
+     
+     
+}*/
+
+
+p.basicText {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 15px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 20px;
+}
+
+p.footer {
+    color: #8F0000;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+#betatext {
+    font-style: italic;
+}
+
+img.normiKuva {
+    width:250px;
+    height:250px;
+    border:3px solid #021a40;
+    background-color:#ff0;
+}
+
+#background {
+    background-image: url("bgImage.png");
+    background-repeat: no-repeat;
+}
+
+#container {
+    /*position: fixed;
+    right: 0;
+    left: 0;*/
+    padding:0;
+    margin:0;
+    width:100%;
+    height:100%;
+    min-height:100%;
+    max-height:100% !important;
+
+}
+
+body {
+    background-color: #202020;
+    padding:0;
+    margin:0;
+    /*overflow-y:scroll;*/
+    height:100%;
+    min-height:100%;
+    max-height:100%;
+}
+
+/*Left sidebar*/
+#header { 
+    /*background-color: orange;*/
+    clear: both;
+    padding-right: calc((100% - 800px) / 2);
+    padding-left: calc((100% - 800px) / 2);
+}
+
+#primary { 
+    /*background-color: orange;*/
+    float: left;
+   width: calc((100% - 800px) / 2);
+}
+
+#content {
+    position: relative;
+    background-color: white;
+    float: left;
+    width: 800px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/*Rigth sidebar*/
+#secondary {
+    /*background-color: orange;*/
+    float: left;
+    width: calc((100% - 805px) / 2);
+}
+
+#footer {
+    background-color: #FFFF66;
+    clear: both;
+    padding-right: calc((100% - 800px) / 2);
+    padding-left: calc((100% - 800px) / 2);
+}
